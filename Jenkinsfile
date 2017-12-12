@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Load test') {
             steps {
-                sh 'k6 run -o cloud k6-demo-webinar-171214/script.js'
+                sh 'k6 run -o cloud script.js'
             }
         }
     }
